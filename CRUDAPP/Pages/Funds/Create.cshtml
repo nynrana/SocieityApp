@@ -1,0 +1,78 @@
+﻿@page
+@model CRUDAPP.Pages.Funds.CreateModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Fund</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Fund.festivalId" class="control-label"></label>                
+                <select asp-for="Fund.festivalId" class="form-control" asp-items="Model.Festives"></select>
+                <span asp-validation-for="Fund.festivalId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Fund.fundForYear" class="control-label"></label>                
+                <select asp-for="Fund.fundForYear" class="form-control" asp-items="Model.Year"></select>
+                <span asp-validation-for="Fund.fundForYear" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Fund.Amount" class="control-label"></label>
+                <input asp-for="Fund.Amount" class="form-control" />
+                <span asp-validation-for="Fund.Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fund.PersonsForFood" class="control-label"></label>
+                <input asp-for="Fund.PersonsForFood" class="form-control" />
+                <span asp-validation-for="Fund.PersonsForFood" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Fund.FoodAmount" class="control-label"></label>
+                <input asp-for="Fund.FoodAmount" class="form-control" />
+                <span asp-validation-for="Fund.FoodAmount" class="text-danger"></span>
+            </div>
+
+            
+            <div class="form-group">
+                <label asp-for="Fund.FundDate" class="control-label"></label>
+                <input asp-for="Fund.FundDate" class="form-control" />
+                <span asp-validation-for="Fund.FundDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fund.FundGivenTo" class="control-label"></label>
+                @*<input asp-for="Fund.FundGivenTo" class="form-control" />*@
+                <select asp-for="Fund.givenTo" class="form-control" asp-items="Model.Memebers"></select>
+                <span asp-validation-for="Fund.givenTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fund.FundGivenBy" class="control-label"></label>
+                @*<input asp-for="Fund.FundGivenBy" class="form-control" />*@
+                <select asp-for="Fund.givenBy" class="form-control" asp-items="Model.Memebers"></select>
+                <span asp-validation-for="Fund.givenBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

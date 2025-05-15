@@ -1,0 +1,81 @@
+﻿@page
+@model CRUDAPP.Pages.ExpenseDetail.IndexModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+}
+
+<h1>Expenses</h1>
+<form method="post">
+<p>
+    <a asp-page="Create">Create New</a>
+     <div class="form-group">
+            <div class="row col-md-12">
+                <div class="col-md-3"> <select asp-for="ExpensesForm.festivalId" class="form-control" asp-items="Model.Festives"></select></div>
+                <div class="col-md-3"> <select asp-for="ExpensesForm.fundForYear" class="form-control" asp-items="Model.Year"></select></div>
+                <div class="col-md-3"> <input asp-for="ExpensesForm.ExpenseName" class="form-control" placeholder="Search..." /></div>
+                <div class="col-md-3"> <input type="submit" value="Submit" class="btn btn-primary" /></div>
+                
+            </div>
+        </div>
+</p>
+</form>
+
+<div class="row">
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Expenses[0].ExpenseName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Expenses[0].Amount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Expenses[0].ExpenseDate)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Expenses)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ExpenseName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Amount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ExpenseDate)
+                        </td>
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <table class="table">
+            <tr>
+                <td> Total Fund :  </td>
+                <td class="text-end">@Model.TotalFund</td>
+            </tr>
+            <tr>
+                <td> Total Expenses :  </td>
+                <td class="text-end">@Model.TotalExpense</td>
+            </tr>
+            <tr>
+                <td> Remaining Fund :  </td>
+                <td class="text-end">@Model.RemainigFund</td>
+            </tr>
+        </table>
+    </div>
+</div>
+ 

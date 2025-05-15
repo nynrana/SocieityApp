@@ -1,0 +1,38 @@
+﻿@page
+@model CRUDAPP.Pages.ExpenseDetail.DetailsModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Expenses</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Expenses.ExpenseName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Expenses.ExpenseName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Expenses.Amount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Expenses.Amount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Expenses.ExpenseDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Expenses.ExpenseDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Expenses?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\TestProject\\CRUDAPP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FE58B2-7FB9-4D4B-8228-4A4D41376008}|CRUDAPP\\CRUDAPP.csproj|d:\\projects\\testproject\\crudapp\\crudapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9FE58B2-7FB9-4D4B-8228-4A4D41376008}|CRUDAPP\\CRUDAPP.csproj|solutionrelative:crudapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Projects\\TestProject\\CRUDAPP\\CRUDAPP\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "CRUDAPP\\Pages\\Privacy.cshtml",
+              "ToolTip": "D:\\Projects\\TestProject\\CRUDAPP\\CRUDAPP\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "CRUDAPP\\Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T15:37:32.161Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
