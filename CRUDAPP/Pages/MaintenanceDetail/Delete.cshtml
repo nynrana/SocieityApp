@@ -1,0 +1,53 @@
+﻿@page
+@model CRUDAPP.Pages.MaintenanceDetail.DeleteModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Maintenance</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.MaintenanceGivenBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.MaintenanceGivenBy.ID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.Amount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.Amount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.MaintenanceDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.MaintenanceDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.ModeOfPayment)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.ModeOfPayment)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.createdDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.createdDate)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Maintenance.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

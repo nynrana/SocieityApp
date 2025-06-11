@@ -1,0 +1,50 @@
+﻿@page
+@model CRUDAPP.Pages.MaintenanceDetail.DetailsModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Maintenance</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.MaintenanceGivenBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.MaintenanceGivenBy.ID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.Amount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.Amount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.MaintenanceDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.MaintenanceDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.ModeOfPayment)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.ModeOfPayment)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Maintenance.createdDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Maintenance.createdDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Maintenance?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,61 @@
+﻿@page
+@model CRUDAPP.Pages.MaintenanceDetail.EditModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Maintenance</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Maintenance.ID" />
+            <div class="form-group">
+                <label asp-for="Maintenance.memberId" class="control-label"></label>
+                <select asp-for="Maintenance.memberId" class="form-control" asp-items="ViewBag.members">
+                </select>
+                <span asp-validation-for="Maintenance.memberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Maintenance.Amount" class="control-label"></label>
+                <input asp-for="Maintenance.Amount" class="form-control" />
+                <span asp-validation-for="Maintenance.Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Maintenance.MaintenanceDate" class="control-label"></label>
+                <input asp-for="Maintenance.MaintenanceDate" class="form-control" />
+                <span asp-validation-for="Maintenance.MaintenanceDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Maintenance.ModeOfPayment" class="control-label"></label>
+                <select asp-for="Maintenance.ModeOfPayment" class="form-control" >
+                    <option value="1">Cash</option>
+                    <option value="2">UPI</option>
+                </select>
+                @* <input asp-for="Maintenance.ModeOfPayment" class="form-control" /> *@
+                <span asp-validation-for="Maintenance.ModeOfPayment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Maintenance.createdDate" class="control-label"></label>
+                <input asp-for="Maintenance.createdDate" class="form-control" />
+                <span asp-validation-for="Maintenance.createdDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

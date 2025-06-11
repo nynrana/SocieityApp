@@ -1,0 +1,109 @@
+﻿@page
+@model CRUDAPP.Pages.MaintenanceDetail.IndexModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+}
+
+<h1>
+    Maintenance
+    <span style="float: right;padding-left:10px;"> from  @Model.TotalMember memebers</span>
+    <span style="float: right;">Total Maintenance : @Model.TotalAmount</span>
+</h1>
+<form method="post">
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<div class="form-group">
+    <div class="row col-md-12">
+
+            <div class="col-md-3"> <select asp-for="MaintanForm.fundForMonth" class="form-control" asp-items="Model.Month"></select></div>
+            <div class="col-md-3"> <select asp-for="MaintanForm.fundForYear" class="form-control" asp-items="Model.Year"></select></div>
+        
+        <div class="col-md-3"> <input type="submit" value="Submit" class="btn btn-primary" /></div>
+
+    </div>
+</div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Maintenance[0].MaintenanceGivenBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Maintenance[0].Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Maintenance[0].MaintenanceDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Maintenance[0].ModeOfPayment)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Maintenance) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaintenanceGivenBy.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaintenanceDate)
+            </td>
+            <td>
+                    @(item.ModeOfPayment == 1 ? "Cash" : "UPI")
+
+               
+            </td>
+           
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<h1>
+    Maintenance remaining from
+
+</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Flat Number
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member[0].Name)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Member)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlatNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
+

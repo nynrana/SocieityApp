@@ -1,13 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CRUDAPP.Model
 {
     public class Fund
     {
         public int ID { get; set; }
+        [Precision(18, 2)]
         public decimal Amount { get; set; }
+        [Precision(18, 2)]
         public decimal PersonsForFood { get; set; } = 0;
+        [Precision(18, 2)]
         public decimal FoodAmount { get; set; } = 0;
+        [Precision(18, 2)]
         public decimal TotalAmount { get; set; } = 0;
         public DateTime FundDate { get; set; }
         public int? givenTo { get; set; }

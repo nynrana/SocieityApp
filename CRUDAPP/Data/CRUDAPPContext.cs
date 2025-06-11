@@ -25,5 +25,6 @@ namespace CRUDAPP.Data
         public DbSet<CRUDAPP.Model.Register>? Register { get; set; }
 
         public DbSet<CRUDAPP.Model.Festival>? Festival { get; set; }
+        public DbSet<CRUDAPP.Model.Maintenance>? Maintenance { get; set; }
     }
 }
