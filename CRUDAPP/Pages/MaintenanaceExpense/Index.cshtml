@@ -1,0 +1,88 @@
+﻿@page
+@model CRUDAPP.Pages.MaintenanaceExpense.IndexModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<div class="row">
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MaintenanceExpenses[0].Amount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MaintenanceExpenses[0].Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MaintenanceExpenses[0].MaintenanceExpDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MaintenanceExpenses[0].ModeOfPayment)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MaintenanceExpenses[0].createdDate)
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.MaintenanceExpenses)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Amount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaintenanceExpDate)
+                        </td>
+                        <td>
+                            @(item.ModeOfPayment == 1 ? "Cash" : "UPI")
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.createdDate)
+                        </td>
+
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-md-4">
+       
+            <table class="table">
+                <tr>
+                    <td> Total Fund :  </td>
+                    <td class="text-end">@Model.TotalMaintenance</td>
+                </tr>
+                <tr>
+                    <td> Total Expenses :  </td>
+                    <td class="text-end">@Model.TotalMaintenanceExpense</td>
+                </tr>
+                <tr>
+                    <td> Remaining Fund :  </td>
+                    <td class="text-end">@Model.RemainigMaintenance</td>
+                </tr>
+            </table>
+        
+    </div>
+</div>

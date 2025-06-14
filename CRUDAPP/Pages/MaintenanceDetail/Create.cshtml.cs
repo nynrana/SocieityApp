@@ -36,7 +36,8 @@ namespace CRUDAPP.Pages.MaintenanceDetail
             {
                 return Page();
             }
-
+            int id = Convert.ToInt32(Request.Cookies["logindetail"]);
+            Maintenance.groupId = id;
             _context.Maintenance.Add(Maintenance);
             await _context.SaveChangesAsync();
 

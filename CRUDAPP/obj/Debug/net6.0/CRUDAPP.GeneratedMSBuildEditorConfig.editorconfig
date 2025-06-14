@@ -9,167 +9,207 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CRUDAPP
 build_property.RootNamespace = CRUDAPP
-build_property.ProjectDir = D:\Projects\TestProject\CRUDAPP\CRUDAPP\
+build_property.ProjectDir = D:\Projects\SocietyApplication\CRUDAPP\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Projects\TestProject\CRUDAPP\CRUDAPP
+build_property.MSBuildProjectDirectory = D:\Projects\SocietyApplication\CRUDAPP
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Error.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/ExpenseDetail/Create.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/ExpenseDetail/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZURldGFpbFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/ExpenseDetail/Delete.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/ExpenseDetail/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZURldGFpbFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/ExpenseDetail/Details.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/ExpenseDetail/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZURldGFpbFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/ExpenseDetail/Edit.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/ExpenseDetail/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZURldGFpbFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/ExpenseDetail/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/ExpenseDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5zZURldGFpbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Festivals/Create.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Festivals/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVzdGl2YWxzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Festivals/Delete.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Festivals/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVzdGl2YWxzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Festivals/Details.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Festivals/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVzdGl2YWxzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Festivals/Edit.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Festivals/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVzdGl2YWxzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Festivals/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Festivals/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVzdGl2YWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Funds/Create.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Funds/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Funds/Delete.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Funds/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Funds/Details.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Funds/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Funds/Edit.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Funds/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Funds/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Funds/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuZHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/LoginPage/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/LoginPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Members/Create.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanaceExpense/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuYWNlRXhwZW5zZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanaceExpense/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuYWNlRXhwZW5zZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanaceExpense/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuYWNlRXhwZW5zZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanaceExpense/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuYWNlRXhwZW5zZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanaceExpense/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuYWNlRXhwZW5zZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanceDetail/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuY2VEZXRhaWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanceDetail/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuY2VEZXRhaWxcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanceDetail/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuY2VEZXRhaWxcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanceDetail/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuY2VEZXRhaWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/MaintenanceDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbnRlbmFuY2VEZXRhaWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Members/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Members/Delete.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Members/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Members/Details.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Members/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Members/Edit.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Members/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Members/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Members/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Privacy.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Registration/Create.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Registration/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Registration/Delete.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Registration/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Registration/Details.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Registration/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Registration/Edit.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Registration/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Registration/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Registration/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Users/Create.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Users/Delete.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Users/Details.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Users/Edit.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Users/Index.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/_ViewImports.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/_ViewStart.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Shared/_Layout.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-av2uzh1db6
 
-[D:/Projects/TestProject/CRUDAPP/CRUDAPP/Pages/Shared/_LoginLayout.cshtml]
+[D:/Projects/SocietyApplication/CRUDAPP/Pages/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-7342nvtuqi

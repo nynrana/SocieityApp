@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\TestProject\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj": {}
+    "D:\\Projects\\SocietyApplication\\CRUDAPP\\CRUDAPP.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\TestProject\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj": {
+    "D:\\Projects\\SocietyApplication\\CRUDAPP\\CRUDAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\TestProject\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj",
+        "projectUniqueName": "D:\\Projects\\SocietyApplication\\CRUDAPP\\CRUDAPP.csproj",
         "projectName": "CRUDAPP",
-        "projectPath": "D:\\Projects\\TestProject\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj",
+        "projectPath": "D:\\Projects\\SocietyApplication\\CRUDAPP\\CRUDAPP.csproj",
         "packagesPath": "C:\\Users\\Nayan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\TestProject\\CRUDAPP\\CRUDAPP\\obj\\",
+        "outputPath": "D:\\Projects\\SocietyApplication\\CRUDAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,17 +48,21 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.23, )"
+              "version": "[6.0.35, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.35, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.23, )"
+              "version": "[6.0.35, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.16, )"
+              "version": "[6.0.18, )"
             }
           },
           "imports": [

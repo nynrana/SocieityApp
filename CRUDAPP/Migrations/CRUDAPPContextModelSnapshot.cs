@@ -17,7 +17,7 @@ namespace CRUDAPP.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.23")
+                .HasAnnotation("ProductVersion", "6.0.35")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -31,6 +31,7 @@ namespace CRUDAPP.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
                     b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("ExpenseDate")
@@ -80,9 +81,11 @@ namespace CRUDAPP.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
                     b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("FoodAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("FundDate")
@@ -95,9 +98,11 @@ namespace CRUDAPP.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("PersonsForFood")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("TotalAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("description")
@@ -132,6 +137,79 @@ namespace CRUDAPP.Migrations
                     b.HasIndex("FundGivenToID");
 
                     b.ToTable("Fund");
+                });
+
+            modelBuilder.Entity("CRUDAPP.Model.Maintenance", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("MaintenanceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ModeOfPayment")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("createdDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("fundForMonth")
+                        .HasColumnType("int");
+
+                    b.Property<int>("fundForYear")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("groupId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("memberId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("memberId");
+
+                    b.ToTable("Maintenance");
+                });
+
+            modelBuilder.Entity("CRUDAPP.Model.MaintenanceExpenses", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("MaintenanceExpDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ModeOfPayment")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("createdDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("groupId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("MaintenanceExpenses");
                 });
 
             modelBuilder.Entity("CRUDAPP.Model.Member", b =>
@@ -239,6 +317,15 @@ namespace CRUDAPP.Migrations
                     b.Navigation("FundGivenBy");
 
                     b.Navigation("FundGivenTo");
+                });
+
+            modelBuilder.Entity("CRUDAPP.Model.Maintenance", b =>
+                {
+                    b.HasOne("CRUDAPP.Model.Member", "MaintenanceGivenBy")
+                        .WithMany()
+                        .HasForeignKey("memberId");
+
+                    b.Navigation("MaintenanceGivenBy");
                 });
 #pragma warning restore 612, 618
         }

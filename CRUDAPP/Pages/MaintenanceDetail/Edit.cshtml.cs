@@ -54,6 +54,8 @@ namespace CRUDAPP.Pages.MaintenanceDetail
 
             try
             {
+                int id = Convert.ToInt32(Request.Cookies["logindetail"]);
+                Maintenance.groupId = id;
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
